@@ -136,7 +136,7 @@
 <li><p>整数</p>
 </li>
 </ol>
-<p>特殊的数值NaN（Not a Number）</p>
+<p>特殊的数值NaN（Not a Number）不是数值，，用于表示本来要返回数值的操作失败了（而不是抛出错误）</p>
 <p>数值转换    </p>
 <ul>
 <li>Number()  适用于任何数据类型   </li>
@@ -155,15 +155,12 @@
 <li><p>如果是空字符串，转换成0。   </p>
 </li>
 <li><p>如果是非以上格式的字符串，转换成NaN。          </p>
-<pre><code>   TIPS：在数字字符串前面加上加号，也可以将字符串转换为数字。
-</code></pre>
+<p>   TIPS：在数字字符串前面加上加号，也可以将字符串转换为数字。</p>
 </li>
 </ul>
 </li>
 </ul>
-<ol>
-<li>string<br>模板字面量<br>JavaScript常常会发生以下情况</li>
-</ol>
+<h3 id="3-4-5-string"><a href="#3-4-5-string" class="headerlink" title="3.4.5 string"></a>3.4.5 string</h3><p>模板字面量<br>JavaScript常常会发生以下情况</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">2</span>+<span class="string">&#x27;3&#x27;</span>)    <span class="comment">//23</span></span><br></pre></td></tr></table></figure>
 <p>原因是因为在JavaScript中，<code>+</code>不仅仅是数字加，也会用来字符相加。         </p>
 <p>特殊字符    </p>
@@ -203,16 +200,14 @@
 <td align="center">Unicode</td>
 </tr>
 </tbody></table>
-<ol start="6">
-<li>symbol（符号）<br>符号是原始值，且符号实例是唯一、不可变的。<br>symbol的基本使用</li>
-</ol>
+<h3 id="3-4-6-symbol（符号）"><a href="#3-4-6-symbol（符号）" class="headerlink" title="3.4.6 symbol（符号）"></a>3.4.6 symbol（符号）</h3><p>符号是原始值，且符号实例是唯一、不可变的。<br>symbol的基本使用    </p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sym = <span class="title class_">Symbol</span>();    <span class="comment">//使用symbol函数初始化</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> s1 = <span class="title class_">Symbol</span>(<span class="string">&#x27;foo&#x27;</span>)   <span class="comment">//传入一个字符串作为描述</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>使用场景：</p>
 <ul>
 <li>定义常量 比如圆周率等</li>
 <li>定义私有属性 因为symbol值作为属性名，不会被常规方法遍历到，因此可以用来定义私有属性。</li>
 </ul>
-<h3 id="3-4-2-引用数据类型"><a href="#3-4-2-引用数据类型" class="headerlink" title="3.4.2 引用数据类型"></a>3.4.2 引用数据类型</h3><ul>
+<h3 id="3-5-引用数据类型"><a href="#3-5-引用数据类型" class="headerlink" title="3.5 引用数据类型"></a>3.5 引用数据类型</h3><ul>
 <li>对象（object）  </li>
 <li>数组（array）  </li>
 <li>函数（function）</li>
@@ -223,7 +218,7 @@
 <li>constructor  </li>
 <li>Object.prototype.toString.call()</li>
 </ol>
-<h2 id="3-5流控制语句"><a href="#3-5流控制语句" class="headerlink" title="3.5流控制语句"></a>3.5流控制语句</h2><ol>
+<h2 id="3-6流控制语句"><a href="#3-6流控制语句" class="headerlink" title="3.6流控制语句"></a>3.6流控制语句</h2><ol>
 <li>for-in和for-of的区别<br>for-in循环遍历对象的可枚举属性，for-of循环遍历数组的元素。</li>
 </ol>
 
